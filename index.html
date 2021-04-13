@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="cotizacion.js"></script>
+    <script src="main.js"></script>
+    <title>Cotizacion</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Cotizacion</h1>
+
+    <form action="index.html" method="POST">
+        <input type="hidden" id="id" values="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+        </div>
+        <div>
+            <label for="apellido"> Apellido</label>
+            <input type="text" id="apellido" required>
+        </div>
+        <div>
+            <label for="tel">Telefono</label>
+            <input type="text" id="tel" required>
+        </div>
+        <div>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" required>
+        </div>
+        <div>
+            <label for="art">Articulos</label>
+            <input type="text" id="art" required>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" required>
+        </div>
+        <div>
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" required>
+        </div>
+        <div>
+            <a id="btn-agregar">Agregar</a>
+        </div>
+        <div>
+            <a id="btn-eliminar">Eliminar</a>
+        </div>
+        <div>
+            <a id="exportar">Exportar</a>
+        </div>
+    </form>
+    <br>
+    <br>
+    <div id="tab">
+    <table  border="2" id="table-register">
+        <thead>
+            <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Articulo</th>
+            <th>Cantidad</th>
+            <th>Valor</th>
+            <th id="subtotal">Subtotal</th>
+            <th id="itbis">ITBIS</th>
+            <th >Total</th>
+            </tr>
+        </thead>
+        <tbody id="tbody-register">
+
+        </tbody>
+    </table>        
+    </div>
+
+</body>
+</html>
